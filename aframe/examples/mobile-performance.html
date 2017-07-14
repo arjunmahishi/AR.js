@@ -19,7 +19,14 @@
 			</a-torus-knot>
 		</a-box>
 
-		<a-marker-camera type="pattern" patternUrl="../data/data/srm.patt"></a-marker-camera>
+		<a-marker-camera id="marker" type="pattern" patternurl=""></a-marker-camera>
 	</a-scene>
 </body>
+
+<script type="text/javascript">
+
+	var path = window.location.href.split('aframe')[0];
+	document.querySelector("#marker").setAttribute("patternUrl", path + "data/data/patt.hiro");
+</script>
+
 </html>
